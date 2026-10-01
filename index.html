@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6d1d24">
+  <meta name="description" content="Sri Lakshmi Catering – traditional Karnataka vegetarian catering in Ramanagara for weddings, functions and contract catering.">
+  <title>Sri Lakshmi Catering | Ramanagara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --maroon:#6d1d24;--deep:#351317;--gold:#c89b3c;--cream:#fff8ea;--paper:#fffdf8;
+      --green:#24563a;--text:#29201e;--muted:#6f625d;--line:#eadfce;--shadow:0 18px 50px rgba(58,28,17,.12);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.6}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+    .topbar{background:var(--deep);color:#fff;padding:8px 5%;font-size:13px}
+    .topbar-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{max-width:1200px;margin:auto;padding:12px 5%;display:flex;align-items:center;gap:22px}
+    .brand{display:flex;align-items:center;gap:11px;margin-right:auto}
+    .brand img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);background:#fff}
+    .brand strong{font-family:"Cormorant Garamond",serif;font-size:25px;color:var(--maroon);line-height:1}
+    .brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:1.3px;text-transform:uppercase;margin-top:4px}
+    .navlinks{display:flex;gap:20px;align-items:center;font-size:14px;font-weight:600}
+    .navlinks a:hover{color:var(--maroon)}
+    .btn{border:0;border-radius:999px;padding:12px 18px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-gold{background:var(--gold);color:#271a12}
+    .btn-maroon{background:var(--maroon);color:#fff}
+    .btn-outline{border:1px solid var(--maroon);color:var(--maroon);background:transparent}
+    .menu-btn{display:none;background:none;border:0;font-size:28px;color:var(--maroon)}
+    .hero{position:relative;min-height:680px;display:grid;place-items:center;overflow:hidden;color:#fff}
+    .hero:before{content:"";position:absolute;inset:0;background:
+      linear-gradient(90deg,rgba(38,12,14,.9),rgba(38,12,14,.54) 46%,rgba(38,12,14,.2)),
+      url("assets/traditional-bg.jpg") center/cover no-repeat;filter:saturate(1.05)}
+    .hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 45%,rgba(200,155,60,.25),transparent 30%),linear-gradient(180deg,transparent 65%,rgba(20,8,8,.35))}
+    .hero-inner{position:relative;z-index:2;max-width:1200px;width:100%;padding:90px 5%;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+    .eyebrow{display:inline-flex;background:rgba(255,248,234,.14);border:1px solid rgba(255,255,255,.3);padding:7px 12px;border-radius:999px;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+    h1,h2,h3{font-family:"Cormorant Garamond",serif}
+    h1{font-size:clamp(50px,7vw,88px);line-height:.88;margin:18px 0}
+    h1 span{color:#e6bd64}
+    .hero p{font-size:17px;max-width:640px;color:#f8eee4}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .hero-card{justify-self:end;background:rgba(255,250,240,.93);color:var(--text);padding:18px;border-radius:28px;max-width:450px;box-shadow:0 30px 80px rgba(0,0,0,.25)}
+    .hero-card img{height:320px;width:100%;object-fit:cover;border-radius:18px}
+    .hero-card .caption{padding:10px 3px 0}
+    .section{padding:86px 5%;max-width:1200px;margin:auto}
+    .section-head{text-align:center;max-width:760px;margin:0 auto 40px}
+    .kicker{color:var(--maroon);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12px}
+    h2{font-size:clamp(38px,5vw,58px);line-height:.95;margin:10px 0 15px;color:var(--deep)}
+    .section-head p{color:var(--muted)}
+    .strip{background:var(--green);color:#fff}
+    .strip-inner{max-width:1200px;margin:auto;padding:20px 5%;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;text-align:center}
+    .strip strong{display:block;color:#f1ca6d}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+    .about-photo{position:relative}
+    .about-photo img{width:100%;height:520px;object-fit:cover;border-radius:28px;box-shadow:var(--shadow)}
+    .seal{position:absolute;right:-20px;bottom:25px;width:150px;height:150px;border-radius:50%;background:var(--cream);border:5px solid var(--gold);padding:15px;text-align:center;display:grid;place-items:center;box-shadow:var(--shadow);font-weight:800;color:var(--maroon)}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:22px}
+    .feature{padding:18px;border:1px solid var(--line);border-radius:18px;background:#fff}
+    .feature b{display:block;color:var(--maroon);margin-bottom:4px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{padding:28px;border-radius:22px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 25px rgba(58,28,17,.05);transition:.2s}
+    .service:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .service .icon{font-size:34px}
+    .service h3{font-size:30px;margin:12px 0 4px;color:var(--maroon)}
+    .gallery-wrap{background:linear-gradient(#fff8ea,#fffdf8)}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .gallery button{border:0;background:none;padding:0;position:relative;overflow:hidden;border-radius:18px}
+    .gallery img{height:250px;width:100%;object-fit:cover;transition:.35s}
+    .gallery button:hover img{transform:scale(1.06)}
+    .gallery span{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.68);color:#fff;padding:6px 10px;border-radius:999px;font-size:12px}
+    .menu-section{background:var(--deep);color:#fff}
+    .menu-section h2{color:#fff}
+    .menu-tabs{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:25px}
+    .menu-tab{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.3);padding:9px 15px;border-radius:999px}
+    .menu-tab.active,.menu-tab:hover{background:var(--gold);color:#24170e;border-color:var(--gold)}
+    .menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .menu-item{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+    .menu-item b{display:block}.menu-item small{color:#cbbdb4}.price{color:#f0c96b;font-weight:800;white-space:nowrap}
+    .booking{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .booking-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:30px;align-items:start}
+    .booking-info{background:linear-gradient(145deg,var(--maroon),#391319);color:#fff;border-radius:26px;padding:32px;position:sticky;top:100px}
+    .booking-info h3{font-size:38px;margin-top:0}.booking-info p{color:#f0ddd2}
+    .checklist{padding:0;list-style:none}.checklist li{margin:12px 0}.checklist li:before{content:"✓";color:#f2c967;font-weight:900;margin-right:9px}
+    .form{background:#fff;padding:30px;border-radius:26px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}
+    label{font-size:13px;font-weight:700}.field input,.field select,.field textarea{border:1px solid #dfd4c5;border-radius:13px;padding:13px 14px;outline:none;background:#fff}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,155,60,.12)}
+    textarea{min-height:110px;resize:vertical}
+    .form-note{grid-column:1/-1;color:var(--muted);font-size:12px}
+    .certificate{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:26px;padding:32px;box-shadow:var(--shadow)}
+    .cert-placeholder{height:260px;border-radius:18px;background:linear-gradient(135deg,#f5e9d5,#fff);display:grid;place-items:center;color:var(--maroon);font-family:"Cormorant Garamond",serif;font-size:42px;text-align:center;padding:30px}
+    .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review{background:#fff;border:1px solid var(--line);padding:24px;border-radius:20px}.stars{color:#c8952f;letter-spacing:2px}
+    .contact{background:linear-gradient(135deg,#251011,#6d1d24);color:#fff}.contact-grid{max-width:1200px;margin:auto;padding:75px 5%;display:grid;grid-template-columns:1.1fr .9fr;gap:35px}.contact h2{color:#fff}.contact-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);padding:24px;border-radius:22px}.contact-list{display:grid;gap:13px}.contact-list a{color:#ffe0a0}
+    footer{background:#1d0b0d;color:#dbc9c1;padding:25px 5%;text-align:center;font-size:13px}
+    .modal{position:fixed;inset:0;background:rgba(15,7,6,.82);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}
+    .modal-card{background:#fff;border-radius:22px;max-width:900px;width:100%;max-height:92vh;overflow:auto;position:relative;padding:18px}.modal-card img{max-height:78vh;width:auto;margin:auto;object-fit:contain}.close{position:absolute;right:15px;top:12px;width:42px;height:42px;border-radius:50%;border:0;background:var(--deep);color:#fff;font-size:22px;z-index:2}
+    .toast{position:fixed;right:18px;bottom:18px;z-index:120;background:#1f1715;color:#fff;padding:14px 17px;border-radius:14px;box-shadow:var(--shadow);display:none}.toast.show{display:block}
+    .lightbox-img{width:100%;max-height:78vh;object-fit:contain}
+    .float-actions{position:fixed;right:16px;bottom:16px;z-index:40;display:grid;gap:10px}.float-actions a{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:20px;box-shadow:0 10px 25px rgba(0,0,0,.18)}.wa{background:#1eae58}.call{background:var(--maroon)}
+    .reveal{opacity:0;transform:translateY(20px);transition:.6s}.reveal.visible{opacity:1;transform:none}
+    .video-box{position:relative;border-radius:25px;overflow:hidden;min-height:420px;background:#16090a url("assets/meal-03.jpg") center/cover}.video-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,7,8,.85),rgba(24,7,8,.2));display:flex;align-items:center;padding:40px}.video-copy{max-width:540px;color:#fff}.video-copy h2{color:#fff}.play{width:68px;height:68px;border:0;border-radius:50%;background:var(--gold);font-size:25px;margin-top:15px}
+    .faq{display:grid;gap:10px;max-width:850px;margin:auto}.faq details{background:#fff;border:1px solid var(--line);border-radius:15px;padding:16px 18px}.faq summary{font-weight:800;cursor:pointer}
+    @media(max-width:900px){
+      .navlinks{display:none}.menu-btn{display:block}.nav.open .navlinks{display:flex;position:absolute;top:100%;left:0;right:0;background:#fff;padding:16px 5%;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}
+      .hero-inner,.about,.booking-grid,.certificate,.contact-grid{grid-template-columns:1fr}.hero{min-height:auto}.hero-card{justify-self:stretch}.hero-card img{height:260px}.booking-info{position:static}
+      .services{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.reviews{grid-template-columns:1fr}.strip-inner{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:600px){
+      .topbar-inner{justify-content:center;text-align:center}.brand strong{font-size:21px}.brand img{width:40px;height:40px}.nav{padding:10px 4%}
+      .hero-inner{padding:70px 5%}.hero{min-height:0}.hero-card{display:none}h1{font-size:58px}.section{padding:62px 5%}.features,.services,.gallery,.menu-grid,.form{grid-template-columns:1fr}.strip-inner{grid-template-columns:1fr 1fr}.contact-grid{padding:60px 5%}.form{padding:20px}.field.full{grid-column:auto}.form-note{grid-column:auto}
+      .gallery img{height:210px}.seal{right:8px;width:105px;height:105px;font-size:12px}.float-actions{right:12px;bottom:12px}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="topbar-inner"><span>🌿 100% Pure Vegetarian • Traditional Karnataka Catering</span><span>📍 Ramanagara, Karnataka</span></div></div>
+
+  <header>
+    <div class="nav" id="nav">
+      <a class="brand" href="#home">
+        <img src="assets/lakshmi-logo.jpg" alt="Sri Lakshmi logo">
+        <span><strong>Sri Lakshmi Catering</strong><small>Traditional • Pure Vegetarian</small></span>
+      </a>
+      <button class="menu-btn" aria-label="Open menu" onclick="toggleNav()">☰</button>
+      <nav class="navlinks">
+        <a href="#about">About</a><a href="#services">Services</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#booking">Booking</a><a href="#certificate">Certificate</a><a href="#contact">Contact</a>
+        <a class="btn btn-gold" href="#booking">Book Catering</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="reveal">
+          <span class="eyebrow">Ramanagara's Traditional Vegetarian Catering</span>
+          <h1>Authentic <span>Karnataka</span><br>Pure Veg Catering</h1>
+          <p>Traditional banana-leaf meals, wedding catering, function catering and contract food service — prepared with the warmth of Karnataka hospitality.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#booking">📅 Plan Your Event</a>
+            <a class="btn btn-outline" style="border-color:#fff;color:#fff" href="https://wa.me/919916619876?text=Hello%20Sri%20Lakshmi%20Catering,%20I%20would%20like%20to%20enquire%20about%20catering." target="_blank">💬 WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <img src="assets/meal-01.jpg" alt="Traditional Karnataka banana leaf meal">
+          <div class="caption"><b>Signature Banana-Leaf Meal</b><br><small>Wedding • Function • Traditional feast</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip"><div class="strip-inner">
+      <div><strong>100%</strong>Pure Vegetarian</div><div><strong>Wedding</strong>Catering</div><div><strong>Function</strong>Catering</div><div><strong>Contract</strong>Food Service</div>
+    </div></section>
+
+    <section class="section" id="about">
+      <div class="about">
+        <div class="about-photo reveal"><img src="assets/meal-02.jpg" alt="Traditional banana leaf Karnataka meal"><div class="seal">TRADITIONAL<br>KARNATAKA<br>PURE VEG</div></div>
+        <div class="reveal">
+          <span class="kicker">About Sri Lakshmi</span>
+          <h2>Tradition served with care.</h2>
+          <p><b>Sri Lakshmi Catering</b> is a Ramanagara-based pure vegetarian catering service led by <b>Vijay Kumar N.A.</b> We focus on authentic Karnataka-style meals, neat service and dependable event support.</p>
+          <div class="features">
+            <div class="feature"><b>🍃 Banana-Leaf Meals</b><span>Classic traditional presentation for special occasions.</span></div>
+            <div class="feature"><b>👨‍🍳 Fresh Preparation</b><span>Menu planning and preparation suited to your event.</span></div>
+            <div class="feature"><b>💍 Wedding Catering</b><span>Breakfast, lunch, dinner and reception service.</span></div>
+            <div class="feature"><b>🏢 Contract Catering</b><span>Regular food-service requirements can be discussed.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-head"><span class="kicker">What We Do</span><h2>Catering for every occasion</h2><p>Choose a service and tell us your requirements. We will prepare a practical menu and quotation for your event.</p></div>
+      <div class="services">
+        <article class="service reveal"><div class="icon">💍</div><h3>Wedding Catering</h3><p>Traditional Karnataka wedding meals, banana-leaf service, breakfast, lunch, dinner and reception support.</p><a class="btn btn-outline" href="#booking">Enquire</a></article>
+        <article class="service reveal"><div class="icon">🎉</div><h3>Function Catering</h3><p>Birthday, housewarming, naming ceremony, engagement, pooja and community functions.</p><a class="btn btn-outline" href="#booking">Enquire</a></article>
+        <article class="service reveal"><div class="icon">🏢</div><h3>Contract Catering</h3><p>Regular meal service for offices, institutions and other recurring requirements, subject to discussion.</p><a class="btn btn-outline" href="#booking">Discuss</a></article>
+        <article class="service reveal"><div class="icon">🍃</div><h3>Banana-Leaf Service</h3><p>A traditional serving experience with Karnataka-style dishes and attentive event service.</p><a class="btn btn-outline" href="#gallery">See Meals</a></article>
+        <article class="service reveal"><div class="icon">🥗</div><h3>Pure Vegetarian Menu</h3><p>South Indian breakfast and traditional vegetarian lunch/dinner combinations for your guest count.</p><a class="btn btn-outline" href="#menu">View Menu</a></article>
+        <article class="service reveal"><div class="icon">🤝</div><h3>Custom Packages</h3><p>Tell us your date, guest count, menu preference and budget. We can discuss a suitable package.</p><a class="btn btn-outline" href="#booking">Plan Now</a></article>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section">
+        <div class="section-head"><span class="kicker" style="color:#f0c96b">Traditional Menu</span><h2>Sample Karnataka feast</h2><p style="color:#ddd">This is a sample menu. Final dishes and pricing can be customized for your event.</p></div>
+        <div class="menu-tabs">
+          <button class="menu-tab active" onclick="filterMenu('all',this)">All</button><button class="menu-tab" onclick="filterMenu('breakfast',this)">Breakfast</button><button class="menu-tab" onclick="filterMenu('lunch',this)">Lunch</button><button class="menu-tab" onclick="filterMenu('sweet',this)">Sweets</button>
+        </div>
+        <div class="menu-grid" id="menuGrid">
+          <div class="menu-item" data-cat="breakfast"><div><b>Idli • Vada • Sambar</b><small>Classic South Indian breakfast</small></div><span class="price">On request</span></div>
+          <div class="menu-item" data-cat="breakfast"><div><b>Dosa • Chutney</b><small>Freshly prepared</small></div><span class="price">On request</span></div>
+          <div class="menu-item" data-cat="lunch"><div><b>Rice • Dal • Sambar</b><small>Traditional meal base</small></div><span class="price">On request</span></div>
+          <div class="menu-item" data-cat="lunch"><div><b>Palya • Kosambari • Curry</b><small>Seasonal vegetarian dishes</small></div><span class="price">On request</span></div>
+          <div class="menu-item" data-cat="lunch"><div><b>Rasam • Curd • Papad</b><small>Traditional accompaniments</small></div><span class="price">On request</span></div>
+          <div class="menu-item" data-cat="sweet"><div><b>Payasam / Sweet</b><small>Festival and wedding-style dessert</small></div><span class="price">On request</span></div>
+          <div class="menu-item" data-cat="sweet"><div><b>Obbattu / Holige</b><small>Traditional Karnataka sweet</small></div><span class="price">On request</span></div>
+          <div class="menu-item" data-cat="lunch"><div><b>Banana • Chips • Pickle</b><small>Traditional leaf-meal accompaniments</small></div><span class="price">On request</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-wrap" id="gallery">
+      <div class="section">
+        <div class="section-head"><span class="kicker">Real Food Gallery</span><h2>See the traditional meal</h2><p>Tap any photo to view it larger.</p></div>
+        <div class="gallery">
+          <button onclick="openImage('assets/meal-01.jpg','Traditional Karnataka banana-leaf meal')"><img src="assets/meal-01.jpg" alt="Traditional Karnataka meal"><span>Banana-leaf feast</span></button>
+          <button onclick="openImage('assets/meal-02.jpg','Traditional meal service')"><img src="assets/meal-02.jpg" alt="Traditional meal service"><span>Traditional meal</span></button>
+          <button onclick="openImage('assets/meal-03.jpg','Banana leaf dosa meal')"><img src="assets/meal-03.jpg" alt="Dosa banana leaf meal"><span>Breakfast service</span></button>
+          <button onclick="openImage('assets/meal-04.jpg','Catering food spread')"><img src="assets/meal-04.jpg" alt="Catering food spread"><span>Food spread</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="video-box reveal">
+        <div class="video-overlay"><div class="video-copy">
+          <span class="kicker" style="color:#f0c96b">Catering Experience</span>
+          <h2>From preparation to serving</h2>
+          <p>Explore our food gallery and traditional service style. If you have a catering-making video, place an MP4 named <b>assets/catering-making.mp4</b> in this folder and the player will use it automatically.</p>
+          <button class="play" onclick="openVideo()">▶</button>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="section">
+        <div class="section-head"><span class="kicker">Booking</span><h2>Plan your catering</h2><p>Fill the form and the website will prepare a complete WhatsApp enquiry for you.</p></div>
+        <div class="booking-grid">
+          <aside class="booking-info">
+            <h3>Let's plan your event.</h3>
+            <p>Share the basic details. You can review the message before sending it on WhatsApp.</p>
+            <ul class="checklist"><li>Wedding & function catering</li><li>Traditional banana-leaf meals</li><li>Pure vegetarian menu</li><li>Custom guest counts</li><li>Contract catering enquiry</li></ul>
+            <a class="btn btn-gold" href="tel:+919916619876">📞 Call 099166 19876</a>
+          </aside>
+          <form class="form" id="bookingForm" onsubmit="submitBooking(event)">
+            <div class="field"><label for="name">Your Name *</label><input id="name" required placeholder="Enter your name"></div>
+            <div class="field"><label for="phone">Phone *</label><input id="phone" required inputmode="tel" placeholder="10-digit mobile number"></div>
+            <div class="field"><label for="eventType">Event Type *</label><select id="eventType" required><option value="">Select</option><option>Wedding</option><option>Reception</option><option>Birthday</option><option>Housewarming</option><option>Engagement</option><option>Pooja / Ceremony</option><option>Corporate / Office</option><option>Contract Catering</option><option>Other Function</option></select></div>
+            <div class="field"><label for="meal">Meal Service</label><select id="meal"><option>Traditional Lunch</option><option>Breakfast</option><option>Dinner</option><option>Banana-Leaf Feast</option><option>Custom Menu</option></select></div>
+            <div class="field"><label for="date">Event Date *</label><input id="date" type="date" required></div>
+            <div class="field"><label for="guests">Expected Guests *</label><input id="guests" type="number" min="1" required placeholder="e.g. 150"></div>
+            <div class="field"><label for="service">Service Style</label><select id="service"><option>Traditional Serving</option><option>Banana Leaf</option><option>Buffet</option><option>To Discuss</option></select></div>
+            <div class="field"><label for="budget">Approx. Budget</label><select id="budget"><option>Not decided</option><option>Below ₹50,000</option><option>₹50,000 – ₹1,00,000</option><option>₹1,00,000 – ₹2,00,000</option><option>Above ₹2,00,000</option></select></div>
+            <div class="field full"><label for="address">Event Location</label><input id="address" placeholder="Venue / area / town"></div>
+            <div class="field full"><label for="notes">Additional Requirements</label><textarea id="notes" placeholder="Tell us about menu preferences, serving time, special dishes, etc."></textarea></div>
+            <div class="form-note">Your details stay in your browser until you choose to send the enquiry. This demo does not store submissions on a server.</div>
+            <button class="btn btn-maroon field full" type="submit">💬 Review WhatsApp Booking Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certificate">
+      <div class="certificate reveal">
+        <div>
+          <span class="kicker">Food Safety</span><h2>FSSAI Registration</h2>
+          <p>The certificate is intentionally hidden from the main page. Use the button below to open the supplied certificate image in a secure-looking viewer.</p>
+          <button class="btn btn-gold" onclick="openCertificate()">View Certificate</button>
+        </div>
+        <div class="cert-placeholder">Sri Lakshmi<br><span style="font-size:25px">FSSAI Registration Certificate</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><span class="kicker">Customer Experience</span><h2>Built around your event</h2></div>
+      <div class="reviews">
+        <div class="review"><div class="stars">★★★★★</div><p>Traditional presentation and a clean, simple enquiry process for event planning.</p><b>Wedding Catering</b></div>
+        <div class="review"><div class="stars">★★★★★</div><p>Good fit for families looking for a Karnataka-style vegetarian meal and banana-leaf service.</p><b>Function Catering</b></div>
+        <div class="review"><div class="stars">★★★★★</div><p>Tell the team your guest count and requirements first, then discuss the final menu and quotation.</p><b>Custom Enquiry</b></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><span class="kicker">FAQ</span><h2>Frequently asked</h2></div>
+      <div class="faq">
+        <details><summary>Do you provide wedding catering?</summary><p>Yes. Wedding, reception and traditional function catering enquiries can be submitted through the booking form.</p></details>
+        <details><summary>Is the food pure vegetarian?</summary><p>The website presents Sri Lakshmi Catering as a pure vegetarian catering service.</p></details>
+        <details><summary>Can I request a custom menu?</summary><p>Yes. Select Custom Menu and explain your requirements in the booking form.</p></details>
+        <details><summary>Do you provide contract catering?</summary><p>Contract catering enquiries are supported. Share the expected meal frequency, guest count and location for discussion.</p></details>
+        <details><summary>How do I book?</summary><p>Use the booking form. It creates a WhatsApp message with your event details so you can review and send it.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div><span class="kicker" style="color:#f0c96b">Contact</span><h2>Let's talk about your event.</h2><p>For menu, guest count, service style and quotation enquiries, contact Sri Lakshmi Catering, Ramanagara.</p>
+        <div class="hero-actions"><a class="btn btn-gold" href="tel:+919916619876">📞 Call Now</a><a class="btn btn-outline" style="color:#fff;border-color:#fff" target="_blank" href="https://wa.me/919916619876?text=Hello%20Sri%20Lakshmi%20Catering,%20I%20want%20to%20enquire%20about%20catering.">💬 WhatsApp</a></div>
+      </div>
+      <div class="contact-card"><div class="contact-list">
+        <div>👤 <b>Proprietor / Contact:</b> Vijay Kumar N.A.</div>
+        <div>📞 <b>Phone:</b> <a href="tel:+919916619876">099166 19876</a></div>
+        <div>📍 <b>Address:</b> 4762, Mahatma Gandhi Rd, Agrahar, Ramanagara, Karnataka 562159</div>
+        <div>🗺️ <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=4762%2C%20Mahatma%20Gandhi%20Rd%2C%20Agrahar%2C%20Ramanagara%2C%20Karnataka%20562159">Open location in Google Maps</a></div>
+      </div></div>
+    </div>
+  </section>
+
+  <footer>© <span id="year"></span> Sri Lakshmi Catering • Ramanagara • Traditional Karnataka Pure Vegetarian Catering</footer>
+
+  <div class="float-actions"><a class="wa" target="_blank" href="https://wa.me/919916619876?text=Hello%20Sri%20Lakshmi%20Catering,%20I%20would%20like%20to%20enquire%20about%20catering." aria-label="WhatsApp">💬</a><a class="call" href="tel:+919916619876" aria-label="Call">☎</a></div>
+
+  <div class="modal" id="imageModal" onclick="closeModal(event)"><div class="modal-card"><button class="close" onclick="closeAllModals()">×</button><img id="lightboxImg" class="lightbox-img" src="" alt=""><p id="lightboxCaption" style="text-align:center;font-weight:700"></p></div></div>
+  <div class="modal" id="certModal" onclick="closeModal(event)"><div class="modal-card"><button class="close" onclick="closeAllModals()">×</button><img src="assets/fssai-certificate.jpg" alt="FSSAI Registration Certificate"></div></div>
+  <div class="modal" id="videoModal" onclick="closeModal(event)"><div class="modal-card"><button class="close" onclick="closeAllModals()">×</button><video id="localVideo" controls playsinline style="width:100%;max-height:78vh;background:#000" poster="assets/meal-03.jpg"><source src="assets/catering-making.mp4" type="video/mp4">Your browser can play an MP4 video here when assets/catering-making.mp4 is added.</video><div style="padding:12px;text-align:center"><b>Optional video:</b> add <code>assets/catering-making.mp4</code> to this website folder.</div></div></div>
+  <div class="modal" id="bookingModal" onclick="closeModal(event)"><div class="modal-card" style="max-width:650px"><button class="close" onclick="closeAllModals()">×</button><h2 style="font-size:40px">Review your enquiry</h2><p id="bookingPreview" style="white-space:pre-wrap;background:#fff8ea;padding:18px;border-radius:15px"></p><div style="display:flex;gap:10px;flex-wrap:wrap"><a id="sendWhatsApp" class="btn btn-gold" target="_blank">Send on WhatsApp</a><button class="btn btn-outline" onclick="closeAllModals()">Edit</button></div></div></div>
+  <div class="toast" id="toast"></div>
+
+<script>
+  const PHONE='919916619876';
+  document.getElementById('year').textContent=new Date().getFullYear();
+  function toggleNav(){document.getElementById('nav').classList.toggle('open')}
+  document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+  const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));
+  function filterMenu(cat,btn){document.querySelectorAll('.menu-tab').forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.menu-item').forEach(x=>x.style.display=(cat==='all'||x.dataset.cat===cat)?'flex':'none')}
+  function openImage(src,caption){document.getElementById('lightboxImg').src=src;document.getElementById('lightboxCaption').textContent=caption;document.getElementById('imageModal').classList.add('open')}
+  function openCertificate(){document.getElementById('certModal').classList.add('open')}
+  function openVideo(){document.getElementById('videoModal').classList.add('open');const v=document.getElementById('localVideo');v.load()}
+  function closeAllModals(){document.querySelectorAll('.modal').forEach(m=>m.classList.remove('open'));document.getElementById('localVideo').pause()}
+  function closeModal(e){if(e.target.classList.contains('modal'))closeAllModals()}
+  function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3200)}
+  function submitBooking(e){
+    e.preventDefault();
+    const vals={
+      name:document.getElementById('name').value.trim(),
+      phone:document.getElementById('phone').value.trim(),
+      event:document.getElementById('eventType').value,
+      meal:document.getElementById('meal').value,
+      date:document.getElementById('date').value,
+      guests:document.getElementById('guests').value,
+      service:document.getElementById('service').value,
+      budget:document.getElementById('budget').value,
+      address:document.getElementById('address').value.trim()||'Not provided',
+      notes:document.getElementById('notes').value.trim()||'None'
+    };
+    const message=`Hello Sri Lakshmi Catering,\n\nI would like to enquire/book catering.\n\nName: ${vals.name}\nPhone: ${vals.phone}\nEvent: ${vals.event}\nEvent Date: ${vals.date}\nGuests: ${vals.guests}\nMeal Service: ${vals.meal}\nService Style: ${vals.service}\nApprox. Budget: ${vals.budget}\nEvent Location: ${vals.address}\nAdditional Requirements: ${vals.notes}\n\nPlease share availability, menu options and quotation. Thank you.`;
+    document.getElementById('bookingPreview').textContent=message;
+    document.getElementById('sendWhatsApp').href='https://wa.me/'+PHONE+'?text='+encodeURIComponent(message);
+    document.getElementById('bookingModal').classList.add('open');
+  }
+  // Keep the chosen event date sensible.
+  const dateInput=document.getElementById('date'); if(dateInput) dateInput.min=new Date().toISOString().split('T')[0];
+</script>
+</body>
+</html>
